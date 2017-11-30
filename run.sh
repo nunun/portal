@@ -11,6 +11,7 @@ docker run --rm \
         -e HUGO_THEME=hugo_theme_pickles \
         -e HUGO_BASEURL=http://fu-n.net/ \
         jojomi/hugo
-
 docker-compose build
+[ "${1}" = "build" ] && exit 0
+
 docker-compose up
