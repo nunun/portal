@@ -1,4 +1,1 @@
 Stand by ...
-============
-
-please wait
