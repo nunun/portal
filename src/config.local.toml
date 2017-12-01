@@ -11,7 +11,7 @@ BackgroundImages = [
   "bg/b1920-003.jpg",
   "bg/b1920-004.jpg"
 ]
-BackgroundStyle      = "#000000;"
+BackgroundStyle      = "#888888;"
 OpenLinksInNewWindow = true
 Favicon              = "favicon.ico"
 

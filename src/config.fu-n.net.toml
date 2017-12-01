@@ -1,3 +1,21 @@
-baseurl = "http://fu-n.net/"
+baseurl      = "http://portal.fu-n.net/"
 languageCode = "en-us"
-title = "fu-nportal"
+title        = "fu-nportal"
+theme        = "slate"
+
+[ params ]
+BackgroundImages = [
+  "bg/b1920-000.jpg",
+  "bg/b1920-001.jpg",
+  "bg/b1920-002.jpg",
+  "bg/b1920-003.jpg",
+  "bg/b1920-004.jpg"
+]
+BackgroundStyle      = "#888888;"
+OpenLinksInNewWindow = true
+Favicon              = "favicon.ico"
+
+[[ params.nav ]]
+name = "favorites"
+tag  = "favorite"
+icon = "star"
