@@ -1,2 +1,2 @@
-FROM nginx
-ADD  html /usr/share/nginx/html/
+FROM alpine
+ADD docker-compose.* /compose/

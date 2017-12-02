@@ -1,8 +1,12 @@
 version: '3.3'
 services:
-  nginx:
-    image: fu-n.net:5000/portal/nginx:3
+  compose:
+    image: fu-n.net:5000/portal/compose
     build: .
+
+  nginx:
+    image: fu-n.net:5000/portal/nginx:1
+    build: ./nginx
     restart: always
     ports:
       - 80:80
