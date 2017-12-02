@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - 10080:10080
+
