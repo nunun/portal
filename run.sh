@@ -7,7 +7,6 @@ set -e
 up() { down; build; docker-compose up; }
 down() { docker-compose down; }
 build() { hugo; docker-compose build; }
-publish() { build; docker-compose push; }
 hugo() {
         # check ENVIRONMENT
         if [ "${COMMAND}" = "publish" -a "${ENVIRONMENT}" = "local" ]; then
@@ -33,5 +32,12 @@ hugo() {
                 -v ${project_path}/${config_path}:/src/config.toml \
                 jojomi/hugo
 }
+publish() {
+        local compose="fu-n.net:5000/portal/compose"
+        build
+        docker-compose push
+        docker -t ${compose} .
+        docker push ${compose}
+}
 
-${COMMAND} # run!
+${COMMAND}
