@@ -2,7 +2,8 @@
 # write configs and place images into src/static
 # then 'sh run.sh hugo' to rebuild local site.
 baseurl      = "http://fu-n.net/"
-languageCode = "en-us"
+languageCode = "ja"
+countryCode  = "ja"
 title        = "fu-nportal"
 theme        = "slate"
 
@@ -22,7 +23,7 @@ tag = "activities"
 icon = "user-circle"
 
 [[ params.nav ]]
-name = "codings"
+name = "coding"
 tag = "codings"
 icon = "code"
 
@@ -50,3 +51,8 @@ icon = "gamepad"
 name = "favorites"
 tag = "favorites"
 icon = "star"
+
+[[ params.nav ]]
+name = "powered by"
+tag = "powered_by"
+icon = "bolt"

@@ -34,9 +34,17 @@ tiles:
   txt_color: '#ffffff'
   bg_color: 'rgb(242, 141, 26)'
   tags: ['activities', 'codings']
+
 -
   name: 'swarm-builder'
   url: 'https://github.com/nunun/swarm-builder'
+  img: 'logos/GitHub-Mark-Light-120px-plus.png'
+  txt_color: '#ffffff'
+  bg_color: '#2a3c46'
+  tags: ['activities', 'developments', 'powered_by']
+-
+  name: 'portal'
+  url: 'https://github.com/nunun/portal'
   img: 'logos/GitHub-Mark-Light-120px-plus.png'
   txt_color: '#ffffff'
   bg_color: '#2a3c46'
@@ -86,4 +94,40 @@ tiles:
   txt_color: '#000000'
   bg_color: '#ffffff'
   tags: ['favorites']
+-
+  name: 'Unity'
+  url: 'https://unity3d.com/jp'
+  img: 'logos/unity-master-black.png'
+  txt_color: '#000000'
+  bg_color: '#ffffff'
+  tags: ['favorites']
+-
+  name: 'HUGO'
+  url: 'https://gohugo.io/'
+  img: 'logos/hugo-logo.png'
+  txt_color: '#000000'
+  bg_color: '#303342'
+  tags: ['favorites', 'powered_by']
+-
+  name: 'HUGO Slate Theme'
+  url: 'https://themes.gohugo.io/slate/'
+  img: 'logos/slate.screenshot.png'
+  img_style: 'max-width: 188px; max-height: 120px;'
+  txt_color: '#000000'
+  bg_color: '#ffffff'
+  tags: ['favorites', 'powered_by']
+-
+  name: 'Nginx'
+  url: 'https://themes.gohugo.io/slate/'
+  img: 'logos/Nginx_logo.svg.png'
+  txt_color: '#000000'
+  bg_color: '#3d3e48'
+  tags: ['favorites', 'powered_by']
+-
+  name: 'Docker'
+  url: 'https://www.docker.com/'
+  img: 'logos/moby_small.png'
+  txt_color: '#000000'
+  bg_color: '#ffffff'
+  tags: ['favorites', 'powered_by']
 
