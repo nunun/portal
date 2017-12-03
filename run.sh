@@ -36,7 +36,7 @@ publish() {
         local compose="fu-n.net:5000/portal/compose"
         build
         docker-compose push
-        docker -t ${compose} .
+        docker build -t ${compose} .
         docker push ${compose}
 }
 
