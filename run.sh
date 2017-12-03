@@ -40,6 +40,7 @@ publish() {
         docker-compose push
         docker build -t ${compose} .
         docker push ${compose}
+        echo "done."
 }
 
 ${COMMAND}
