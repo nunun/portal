@@ -175,7 +175,8 @@ var renderImgTile = function(tile) {
         bgColor = "rgba(255,255,255,.8)";
     }
     bgColor = Color(bgColor);
-    bgColor.setAlpha(0.8);
+    //bgColor.setAlpha(0.8); // disable alpha by.nunun
+    bgColor.setAlpha(1.0);
     tile.style.backgroundColor = bgColor;
 
     var img = new Image();
@@ -193,7 +194,8 @@ var renderPlainTile = function(tile) {
         bgColor = "rgba(255,255,255,.8)";
     }
     bgColor = Color(bgColor);
-    bgColor.setAlpha(0.8);
+    //bgColor.setAlpha(0.8); // disable alpha by.nunun
+    bgColor.setAlpha(1.0);
     tile.style.backgroundColor = bgColor;
 
     var txtColor = tile.getAttribute("data-txt-color");

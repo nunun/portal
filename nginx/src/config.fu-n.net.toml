@@ -16,9 +16,9 @@ BackgroundStyle      = "radial-gradient(ellipse farthest-side at center top, #95
 OpenLinksInNewWindow = true
 
 # see http://fontawesome.io/icons/
-[[ params.nav ]]
+params.nav ]]
 name = "my activities"
-tag = ""
+tag = "activities"
 icon = "user-circle"
 
 [[ params.nav ]]

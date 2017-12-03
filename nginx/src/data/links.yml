@@ -1,8 +1,36 @@
 tiles:
 -
-  name: 'Google'
-  url: 'https://google.com'
-  img: 'logos/google.svg'
+  name: 'Twitter @nunun_jp'
+  url: 'https://twitter.com/nunun_jp'
+  img: 'logos/twitter.svg'
+  txt_color: "#f5f8fa"
+  bg_color: "#1da1f2"
+  tags: ['activities']
+-
+  name: 'GitHub @nunun'
+  url: 'https://github.com/nunun?tab=repositories'
+  img: 'logos/GitHub_Logo.png'
+  txt_color: '#000000'
+  bg_color: '#ffffff'
+  tags: ['activities']
+-
+  name: 'Bitbucket @nunun'
+  url: 'https://bitbucket.org/nunun/'
+  img: 'logos/Bitbucket-blue.svg'
+  txt_color: '#000000'
+  bg_color: '#ffffff'
+  tags: ['activities']
+-
+  name: 'Twitch @nunun_jp'
+  url: 'https://www.twitch.tv/nunun_jp/videos/all'
+  img: 'logos/twitch.svg'
+  txt_color: '#000000'
+  bg_color: '#ffffff'
+  tags: ['activities']
+-
+  name: 'ニコニコ動画'
+  url: 'http://www.nicovideo.jp/ranking/fav/daily/all'
+  img: 'logos/nc5758.png'
   txt_color: '#000000'
   bg_color: '#ffffff'
   tags: ['links']
