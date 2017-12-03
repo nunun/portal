@@ -1,6 +1,7 @@
 CWD=$(cd `dirname ${0}`; pwd)
 TASK="${1:-"up"}"
 ENVIRONMENT="${2:-"local"}"
+PUBLISH_ENVIRONMENT="fu-n.net"
 set -e
 cd "${CWD}"
 
@@ -26,14 +27,10 @@ task_hugo() {
                 jojomi/hugo
 }
 task_publish() {
-        if [ "${ENVIRONMENT}" = "local" ]; then
-                echo "could not publish to environment name 'local'."
-                echo "please specify remote environment name like 'fu-n.net'."
-                exit 1
-        fi
+        [ "${ENVIRONMENT}" = "local" ] && ENVIRONMENT="${PUBLISH_ENVIRONMENT}"
+        echo "publish to '${ENVIRONMENT}' ..."
         task_build
         curl -sSL https://raw.githubusercontent.com/nunun/swarm-builder/master/push.sh \
                 | sh -s . ${ENVIRONMENT}:5000/portal/compose
-        echo "done."
 }
 task_${TASK}

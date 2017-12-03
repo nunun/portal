@@ -1,5 +1,5 @@
 version: '3.3'
 services:
   nginx:
-    image: fu-n.net:5000/portal/nginx:8
+    image: fu-n.net:5000/portal/nginx:9
 
