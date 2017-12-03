@@ -1,20 +1,13 @@
 CWD=$(cd `dirname ${0}`; pwd)
-COMMAND="${1:-"up"}"
+TASK="${1:-"up"}"
 ENVIRONMENT="${2:-"local"}"
-cd "${CWD}"
 set -e
+cd "${CWD}"
 
-up() { down; build; docker-compose up; }
-down() { docker-compose down; }
-build() { hugo; docker-compose build; }
-hugo() {
-        # check ENVIRONMENT
-        if [ "${COMMAND}" = "publish" -a "${ENVIRONMENT}" = "local" ]; then
-                echo "could not publish 'local' environment."
-                echo "please specify valid one like 'fu-n.net'."
-                exit 1
-        fi
-
+task_up() { task_down; task_build; docker-compose up; }
+task_down() { docker-compose down; }
+task_build() { task_hugo; docker-compose build; }
+task_hugo() {
         # check paths
         local project_path="${CWD}/nginx"
         local config_path="src/config.${ENVIRONMENT}.toml"
@@ -32,15 +25,15 @@ hugo() {
                 -v ${project_path}/${config_path}:/src/config.toml \
                 jojomi/hugo
 }
-publish() {
-        [ -z "`docker-compose pull 2>&1 | grep "for .*/.*/.* not found"`" ] \
-                && echo "all version tags are published already!" && exit 1
-        local compose="fu-n.net:5000/portal/compose"
-        build
-        docker-compose push
-        docker build -t ${compose} .
-        docker push ${compose}
+task_publish() {
+        if [ "${ENVIRONMENT}" = "local" ]; then
+                echo "could not publish to environment name 'local'."
+                echo "please specify remote environment name like 'fu-n.net'."
+                exit 1
+        fi
+        task_build
+        curl -sSL https://raw.githubusercontent.com/nunun/swarm-builder/master/push.sh \
+                | sh -s . ${ENVIRONMENT}:5000/portal/compose
         echo "done."
 }
-
-${COMMAND}
+task_${TASK}
