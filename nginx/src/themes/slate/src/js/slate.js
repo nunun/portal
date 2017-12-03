@@ -182,6 +182,10 @@ var renderImgTile = function(tile) {
     var img = new Image();
     img.src = tile.getAttribute("data-img");
     img.className = "logo";
+    var imgStyle = tile.getAttribute("data-img-style");
+    if (imgStyle) {
+        img.style.cssText = imgStyle;
+    }
     tile.appendChild(img);
 };
 
