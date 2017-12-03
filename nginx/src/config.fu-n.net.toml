@@ -1,21 +1,28 @@
-baseurl      = "http://portal.fu-n.net/"
+# https://themes.gohugo.io/slate/
+# write configs and place images into src/static
+# then 'sh run.sh hugo' to rebuild local site.
+baseurl      = "http://localhost/"
 languageCode = "en-us"
 title        = "fu-nportal"
 theme        = "slate"
 
 [ params ]
-BackgroundImages = [
-  "bg/b1920-000.jpg",
-  "bg/b1920-001.jpg",
-  "bg/b1920-002.jpg",
-  "bg/b1920-003.jpg",
-  "bg/b1920-004.jpg"
-]
-BackgroundStyle      = "#888888;"
+#BackgroundImages = [
+#  "bg/b1920-000.jpg",
+#]
+#BackgroundStyle     = "#000000;"
+#Favicon             = "favicon.ico"
+BackgroundStyle      = "radial-gradient(ellipse farthest-side at center top, #95a3b3 0%, #657383 100%); height:100%;"
 OpenLinksInNewWindow = true
-Favicon              = "favicon.ico"
+
+# see http://fontawesome.io/icons/
+[[ params.nav ]]
+name = "my activities"
+tag = ""
+icon = "user-circle"
 
 [[ params.nav ]]
-name = "favorites"
-tag  = "favorite"
+name = "links"
+tag = "links"
 icon = "star"
+
