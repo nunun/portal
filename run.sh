@@ -10,7 +10,7 @@ task_down() { docker-compose down; }
 task_build() { task_hugo; docker-compose build; }
 task_hugo() {
         local config_toml="config.${ENVIRONMENT}.toml"
-        echo "generate hugo site with config '${config_toml}' ..."
+        echo "build hugo site with config '${config_toml}' ..."
 
         # check paths
         local project_path="${CWD}/nginx"
@@ -31,10 +31,10 @@ task_hugo() {
 }
 task_publish() {
         [ "${ENVIRONMENT}" = "local" ] && ENVIRONMENT="${PUBLISH_ENVIRONMENT}"
-        local publish_image="${ENVIRONMENT}:5000/portal/compose"
-        echo "publish '${publish_image}' ..."
+        local publish_destination="${ENVIRONMENT}:5000/portal/compose"
+        echo "publish compose image '${publish_destination}' ..."
         task_build
         curl -sSL https://raw.githubusercontent.com/nunun/swarm-builder/master/push.sh \
-                | sh -s . "${publish_image}"
+                | sh -s . "${publish_destination}"
 }
 task_${TASK}
