@@ -3,5 +3,7 @@ services:
   nginx:
     build: ./nginx
     ports:
-      - 10080:10080
+      - 80:80
+    volumes:
+      - ./nginx/html:/usr/share/nginx/html
 

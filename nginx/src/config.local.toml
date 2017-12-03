@@ -4,18 +4,33 @@ title        = "fu-nportal"
 theme        = "slate"
 
 [ params ]
-BackgroundImages = [
-  "bg/b1920-000.jpg",
-  "bg/b1920-001.jpg",
-  "bg/b1920-002.jpg",
-  "bg/b1920-003.jpg",
-  "bg/b1920-004.jpg"
-]
-BackgroundStyle      = "#888888;"
-OpenLinksInNewWindow = true
-Favicon              = "favicon.ico"
+#BackgroundImages = [
+#  "bg/b1920-000.jpg",
+#  "bg/b1920-001.jpg",
+#  "bg/b1920-002.jpg",
+#  "bg/b1920-003.jpg",
+#  "bg/b1920-004.jpg"
+#]
+#BackgroundStyle      = "#888888;"
+#OpenLinksInNewWindow = true
+#Favicon              = "favicon.ico"
 
 [[ params.nav ]]
 name = "favorites"
-tag  = "favorite"
+tag = "favorite"
 icon = "star"
+
+[[ params.nav ]]
+name = "search"
+tag = "search"
+icon = "search"
+
+[[ params.nav ]]
+name = "shopping"
+tag = "shopping"
+icon = "shopping-basket"
+
+[[ params.nav ]]
+name = "music"
+tag = "music"
+icon = "headphones"
