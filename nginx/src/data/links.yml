@@ -1,6 +1,6 @@
 tiles:
 -
-  name: 'グーグル'
+  name: 'Google'
   url: 'https://google.com'
   img: 'logos/google.svg'
   txt_color: '#000000'

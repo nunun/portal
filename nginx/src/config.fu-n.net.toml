@@ -1,7 +1,7 @@
 # https://themes.gohugo.io/slate/
 # write configs and place images into src/static
 # then 'sh run.sh hugo' to rebuild local site.
-baseurl      = "http://localhost/"
+baseurl      = "http://fu-n.net/"
 languageCode = "en-us"
 title        = "fu-nportal"
 theme        = "slate"
