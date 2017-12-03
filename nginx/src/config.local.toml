@@ -13,7 +13,7 @@ theme        = "slate"
 #BackgroundStyle     = "#000000;"
 #Favicon             = "favicon.ico"
 BackgroundStyle      = "radial-gradient(ellipse farthest-side at center top, #95a3b3 0%, #657383 100%); height:100%;"
-OpenLinksInNewWindow = true
+OpenLinksInNewWindow = false
 
 # see http://fontawesome.io/icons/
 [[ params.nav ]]
