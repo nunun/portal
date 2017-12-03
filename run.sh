@@ -9,9 +9,12 @@ task_up() { task_down; task_build; docker-compose up; }
 task_down() { docker-compose down; }
 task_build() { task_hugo; docker-compose build; }
 task_hugo() {
+        local config_toml="config.${ENVIRONMENT}.toml"
+        echo "generate hugo site with config '${config_toml}' ..."
+
         # check paths
         local project_path="${CWD}/nginx"
-        local config_path="src/config.${ENVIRONMENT}.toml"
+        local config_path="src/${config_toml}"
         if [ ! -f "${project_path}/${config_path}" ]; then
                 echo "config file '${config_path}' not found?"
                 exit 1
@@ -28,9 +31,10 @@ task_hugo() {
 }
 task_publish() {
         [ "${ENVIRONMENT}" = "local" ] && ENVIRONMENT="${PUBLISH_ENVIRONMENT}"
-        echo "publish to '${ENVIRONMENT}' ..."
+        local publish_image="${ENVIRONMENT}:5000/portal/compose"
+        echo "publish '${publish_image}' ..."
         task_build
         curl -sSL https://raw.githubusercontent.com/nunun/swarm-builder/master/push.sh \
-                | sh -s . ${ENVIRONMENT}:5000/portal/compose
+                | sh -s . "${publish_image}"
 }
 task_${TASK}
