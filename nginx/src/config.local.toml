@@ -1,3 +1,6 @@
+# https://themes.gohugo.io/slate/
+# write configs and place images into src/static
+# then 'sh run.sh hugo' to rebuild local site.
 baseurl      = "http://localhost/"
 languageCode = "en-us"
 title        = "fu-nportal"
@@ -15,6 +18,7 @@ theme        = "slate"
 #OpenLinksInNewWindow = true
 #Favicon              = "favicon.ico"
 
+# see http://fontawesome.io/icons/
 [[ params.nav ]]
 name = "favorites"
 tag = "favorite"
