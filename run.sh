@@ -1,7 +1,7 @@
 CWD=$(cd `dirname ${0}`; pwd)
 TASK="${1:-"up"}"
 ENVIRONMENT="${2:-"local"}"
-DEFAULT_PUBLISH_ENVIRONMENT="fu-n.net"
+PUBLISH_ENVIRONMENT="${2:-"fu-n.net"}"
 set -e
 cd "${CWD}"
 
@@ -30,7 +30,7 @@ task_hugo() {
                 jojomi/hugo
 }
 task_publish() {
-        [ "${ENVIRONMENT}" = "local" ] && ENVIRONMENT="${DEFAULT_PUBLISH_ENVIRONMENT}"
+        ENVIRONMENT="${PUBLISH_ENVIRONMENT}"
         local publish_destination="${ENVIRONMENT}:5000/portal/compose"
         echo "publish compose image '${publish_destination}' ..."
         task_build
