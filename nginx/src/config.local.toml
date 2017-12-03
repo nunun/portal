@@ -17,12 +17,37 @@ OpenLinksInNewWindow = true
 
 # see http://fontawesome.io/icons/
 [[ params.nav ]]
-name = "my activities"
+name = "activities"
 tag = "activities"
 icon = "user-circle"
 
 [[ params.nav ]]
-name = "links"
-tag = "links"
+name = "codings"
+tag = "codings"
+icon = "code"
+
+[[ params.nav ]]
+name = "devlopments"
+tag = "developments"
+icon = "wrench"
+
+[[ params.nav ]]
+name = "productions"
+tag = "productions"
+icon = "gift"
+
+[[ params.nav ]]
+name = "social"
+tag = "social"
+icon = "feed"
+
+[[ params.nav ]]
+name = "gaming"
+tag = "gaming"
+icon = "gamepad"
+
+[[ params.nav ]]
+name = "favorites"
+tag = "favorites"
 icon = "star"
 

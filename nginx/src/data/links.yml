@@ -5,33 +5,85 @@ tiles:
   img: 'logos/twitter.svg'
   txt_color: "#f5f8fa"
   bg_color: "#1da1f2"
-  tags: ['activities']
+  tags: ['activities', 'social']
 -
   name: 'GitHub @nunun'
   url: 'https://github.com/nunun?tab=repositories'
   img: 'logos/GitHub_Logo.png'
   txt_color: '#000000'
   bg_color: '#ffffff'
-  tags: ['activities']
+  tags: ['activities', 'codings']
 -
   name: 'Bitbucket @nunun'
   url: 'https://bitbucket.org/nunun/'
   img: 'logos/Bitbucket-blue.svg'
   txt_color: '#000000'
   bg_color: '#ffffff'
-  tags: ['activities']
+  tags: ['activities', 'codings']
+-
+  name: 'Docker Hub @nunun'
+  url: 'https://hub.docker.com/r/nunun/'
+  img: 'logos/mini-logo.svg'
+  txt_color: '#000000'
+  bg_color: 'rgb(34, 53, 76)'
+  tags: ['activities', 'codings']
+-
+  name: 'Packagist @nunun'
+  url: 'https://packagist.org/users/nunun/'
+  img: 'logos/packagist.png'
+  txt_color: '#ffffff'
+  bg_color: 'rgb(242, 141, 26)'
+  tags: ['activities', 'codings']
+-
+  name: 'swarm-builder'
+  url: 'https://github.com/nunun/swarm-builder'
+  img: 'logos/GitHub-Mark-Light-120px-plus.png'
+  txt_color: '#ffffff'
+  bg_color: '#2a3c46'
+  tags: ['activities', 'developments']
+-
+  name: 'fu-n.net'
+  url: 'http://fu-n.net'
+  img: 'logos/fu-n.png'
+  txt_color: '#ffffff'
+  bg_color: 'rgb(18, 82, 186)'
+  tags: ['activities', 'productions']
 -
   name: 'Twitch @nunun_jp'
   url: 'https://www.twitch.tv/nunun_jp/videos/all'
   img: 'logos/twitch.svg'
   txt_color: '#000000'
   bg_color: '#ffffff'
-  tags: ['activities']
+  tags: ['activities', 'social']
+-
+  name: 'WoT @nunun_jp'
+  url: 'https://worldoftanks.asia/en/community/accounts/2001503177-nunun_jp/'
+  img: 'logos/wot.jpg'
+  img_style: 'max-width: 188px; max-height: 120px;'
+  txt_color: '#000000'
+  bg_color: '#ffffff'
+  tags: ['activities', 'gaming']
+-
+  name: 'Destiny2'
+  url: 'https://www.destinythegame.com/ja/home'
+  img: 'logos/destiny2.jpg'
+  img_style: 'max-width: 188px; max-height: 120px;'
+  txt_color: '#000000'
+  bg_color: '#ffffff'
+  tags: ['favorites']
+-
+  name: 'PUBG'
+  url: 'http://store.steampowered.com/app/578080/agecheck'
+  img: 'logos/pubg.jpg'
+  img_style: 'max-width: 188px; max-height: 120px;'
+  txt_color: '#000000'
+  bg_color: '#ffffff'
+  tags: ['favorites']
 -
   name: 'ニコニコ動画'
   url: 'http://www.nicovideo.jp/ranking/fav/daily/all'
   img: 'logos/nc5758.png'
   txt_color: '#000000'
   bg_color: '#ffffff'
-  tags: ['links']
+  tags: ['favorites']
 
