@@ -241,7 +241,7 @@ var renderPlainTile = function(tile) {
     domainDiv.appendChild(afterDiv);
 
     var top = (boxHeight + margin)/2 - domainDiv.clientHeight/2;
-    var left = ((boxWidth + margin)/2 + margin - domainDiv.clientWidth/2)/2;
+    var left = (boxWidth + margin)/2 + margin - domainDiv.clientWidth/2 - 10;
     domainDiv.style.top = top;
     domainDiv.style.left = left;
 
