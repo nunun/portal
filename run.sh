@@ -33,6 +33,8 @@ hugo() {
                 jojomi/hugo
 }
 publish() {
+        [ -z "`docker-compose pull 2>&1 | grep "for .*/.*/.* not found"`" ] \
+                && echo "all version tags are published already!" && exit 1
         local compose="fu-n.net:5000/portal/compose"
         build
         docker-compose push
