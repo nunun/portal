@@ -126,7 +126,7 @@ tiles:
   tags: ['favorites', 'powered_by']
 -
   name: 'Nginx'
-  url: 'https://themes.gohugo.io/slate/'
+  url: 'https://nginx.org/en/'
   img: 'logos/Nginx_logo.svg.png'
   txt_color: '#000000'
   bg_color: '#3d3e48'
