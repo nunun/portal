@@ -1,16 +1,17 @@
 CWD=$(cd `dirname ${0}`; pwd)
 TASK="${1:-"up"}"
-ENVIRONMENT="${2:-"local"}"
-PUBLISH_ENVIRONMENT="${2:-"fu-n.net"}"
+[ "${TASK}" = "publish" ] \
+        && export BUILD_ENVIRONMENT="${2:-"fu-n.net"}" \
+        || export BUILD_ENVIRONMENT="${2:-"local"}"
 set -e
 cd "${CWD}"
 
 task_up() { task_down; task_build; docker-compose up; }
 task_down() { docker-compose down; }
-task_build() { task_hugo; BUILD_ENVIRONMENT="${ENVIRONMENT}" docker-compose build; }
+task_build() { task_hugo; docker-compose build; }
 task_hugo() {
         for v in "portal" "www"; do
-                local config_toml="config.${ENVIRONMENT}.toml"
+                local config_toml="config.${BUILD_ENVIRONMENT}.toml"
                 echo "build hugo site '${v}' with config '${config_toml}' ..."
 
                 # check paths
@@ -32,8 +33,7 @@ task_hugo() {
         done
 }
 task_publish() {
-        ENVIRONMENT="${PUBLISH_ENVIRONMENT}"
-        local publish_destination="${ENVIRONMENT}:5000/portal/compose"
+        local publish_destination="${BUILD_ENVIRONMENT}:5000/portal/compose"
         echo "publish compose image '${publish_destination}' ..."
         task_build
         curl -sSL https://raw.githubusercontent.com/nunun/swarm-builder/master/push.sh \
