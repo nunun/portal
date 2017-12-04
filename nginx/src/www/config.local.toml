@@ -12,6 +12,7 @@ theme        = "aerial"
   bg_scroll = "" # empty to enable scroll
   #favicon  = "favicon.ico"
 
+# see http://fontawesome.io/icons/
 #[[params.social]]
 #  medium = "Twitter"
 #  icon = "twitter"
