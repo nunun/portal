@@ -1,5 +1,9 @@
 # https://themes.gohugo.io/aerial/
 baseurl      = "http://fu-n.net/"
+languageCode = "ja"
+countryCode  = "ja"
+title        = "fu-n.net"
+theme        = "aerial"
 
 [params]
   name      = "fu-n.net"
