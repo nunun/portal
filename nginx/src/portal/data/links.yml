@@ -136,6 +136,20 @@ tiles:
   url: 'https://www.docker.com/'
   img: 'logos/moby_small.png'
   txt_color: '#000000'
+  bg_color: '#3e4d5e'
+  tags: ['favorites', 'powered_by']
+-
+  name: 'certbot'
+  url: 'https://certbot.eff.org/'
+  img: 'logos/certbot-logo-1A.svg'
+  txt_color: '#000000'
+  bg_color: '#ffffff'
+  tags: ['favorites', 'powered_by']
+-
+  name: "Let's Encrypt"
+  url: 'https://letsencrypt.org/'
+  img: 'logos/le-logo-wide.svg'
+  txt_color: '#000000'
   bg_color: '#ffffff'
   tags: ['favorites', 'powered_by']
 
