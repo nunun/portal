@@ -1,3 +1,3 @@
-nginx/src/config.toml
+nginx/src/portal/config.toml
 nginx/html/*
 !nginx/html/.gitkeep

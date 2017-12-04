@@ -1,9 +1,13 @@
 version: '3.3'
 services:
   nginx:
-    build: ./nginx
+    build:
+      context: ./nginx
+      args:
+        environment: ${ENVIRONMENT}
     ports:
       - 80:80
     volumes:
-      - ./nginx/html:/usr/share/nginx/html
+      - ./nginx/html/portal:/usr/share/nginx/html/portal
+      - ./nginx/html/www:/usr/share/nginx/html/www
 
