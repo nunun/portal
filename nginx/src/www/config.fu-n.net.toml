@@ -1,58 +1,38 @@
-# https://themes.gohugo.io/slate/
-# write configs and place images into src/static
-# then 'sh run.sh hugo' to rebuild local site.
+# https://themes.gohugo.io/aerial/
 baseurl      = "http://fu-n.net/"
 languageCode = "ja"
 countryCode  = "ja"
-title        = "fu-nportal"
-theme        = "slate"
+title        = "fu-n.net"
+theme        = "aerial"
 
-[ params ]
-#BackgroundImages = [
-#  "bg/b1920-000.jpg",
-#]
-#BackgroundStyle     = "#000000;"
-#Favicon             = "favicon.ico"
-BackgroundStyle      = "radial-gradient(ellipse farthest-side at center top, #95a3b3 0%, #657383 100%); height:100%;"
-OpenLinksInNewWindow = false
+[params]
+  name      = "fu-n.net"
+  about     = "流石だよな、俺ら"
+  copyright = "fu-n.net"
+  bg_scroll = "" # empty to enable scroll
+  #favicon  = "favicon.ico"
 
-# see http://fontawesome.io/icons/
-[[ params.nav ]]
-name = "activities"
-tag = "activities"
-icon = "user-circle"
-
-[[ params.nav ]]
-name = "coding"
-tag = "codings"
-icon = "code"
-
-[[ params.nav ]]
-name = "devlopments"
-tag = "developments"
-icon = "wrench"
-
-[[ params.nav ]]
-name = "productions"
-tag = "productions"
-icon = "gift"
-
-[[ params.nav ]]
-name = "social"
-tag = "social"
-icon = "feed"
-
-[[ params.nav ]]
-name = "gaming"
-tag = "gaming"
-icon = "gamepad"
-
-[[ params.nav ]]
-name = "favorites"
-tag = "favorites"
-icon = "star"
-
-[[ params.nav ]]
-name = "powered by"
-tag = "powered_by"
-icon = "bolt"
+#[[params.social]]
+#  medium = "Twitter"
+#  icon = "twitter"
+#  link = "#"
+#
+#[[params.social]]
+#  medium = "Facebook"
+#  icon = "facebook"
+#  link = "#"
+#
+#[[params.social]]
+#  medium = "Dribbble"
+#  icon = "dribbble"
+#  link = "#"
+#
+#[[params.social]]
+#  medium = "Github"
+#  icon = "github"
+#  link = "#"
+#
+#[[params.social]]
+#  medium = "Email"
+#  icon = "envelope-o"
+#  link = "#"

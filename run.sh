@@ -7,7 +7,7 @@ cd "${CWD}"
 
 task_up() { task_down; task_build; docker-compose up; }
 task_down() { docker-compose down; }
-task_build() { task_hugo; ENVIRONMENT="${ENVIRONMENT}" docker-compose build; }
+task_build() { task_hugo; BUILD_ENVIRONMENT="${ENVIRONMENT}" docker-compose build; }
 task_hugo() {
         for v in "portal" "www"; do
                 local config_toml="config.${ENVIRONMENT}.toml"

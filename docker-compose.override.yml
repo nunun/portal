@@ -4,7 +4,7 @@ services:
     build:
       context: ./nginx
       args:
-        environment: ${ENVIRONMENT}
+        build_environment: ${BUILD_ENVIRONMENT}
     ports:
       - 80:80
     volumes:
