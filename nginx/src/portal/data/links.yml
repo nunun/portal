@@ -136,7 +136,7 @@ tiles:
   url: 'https://www.docker.com/'
   img: 'logos/moby_small.png'
   txt_color: '#000000'
-  bg_color: '#3e4d5e'
+  bg_color: '#ffffff' #'#3e4d5e'
   tags: ['favorites', 'powered_by']
 -
   name: 'certbot'
