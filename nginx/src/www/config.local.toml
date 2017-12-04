@@ -7,16 +7,22 @@ theme        = "aerial"
 
 [params]
   name      = "fu-n.net"
-  about     = "流石だよな、俺ら"
+  about     = "（　´_ゝ`）流石だよな、俺ら（´<_｀ 　）"
   copyright = "fu-n.net"
   bg_scroll = "" # empty to enable scroll
   #favicon  = "favicon.ico"
 
 # see http://fontawesome.io/icons/
+[[params.social]]
+  medium = "Portal"
+  icon   = "thumbs-o-up"
+  link   = "http://portal.localhost/"
+
+#icon = "th"
 #[[params.social]]
 #  medium = "Twitter"
 #  icon = "twitter"
-#  link = "#"
+#  link = "https://twitter.com/nunun_jp"
 #
 #[[params.social]]
 #  medium = "Facebook"

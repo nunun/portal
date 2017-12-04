@@ -117,6 +117,14 @@ tiles:
   bg_color: '#ffffff'
   tags: ['favorites', 'powered_by']
 -
+  name: 'HUGO Aerial Theme'
+  url: 'https://themes.gohugo.io/aerial/'
+  img: 'logos/aerial.screenshot.png'
+  img_style: 'max-width: 188px; max-height: 120px;'
+  txt_color: '#000000'
+  bg_color: '#ffffff'
+  tags: ['favorites', 'powered_by']
+-
   name: 'Nginx'
   url: 'https://themes.gohugo.io/slate/'
   img: 'logos/Nginx_logo.svg.png'

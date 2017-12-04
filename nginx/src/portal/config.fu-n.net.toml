@@ -18,7 +18,7 @@ OpenLinksInNewWindow = false
 
 # see http://fontawesome.io/icons/
 [[ params.nav ]]
-name = "activities"
+name = "my activities"
 tag = "activities"
 icon = "user-circle"
 
