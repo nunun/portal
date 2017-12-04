@@ -28,7 +28,7 @@ tag = "codings"
 icon = "code"
 
 [[ params.nav ]]
-name = "devlopments"
+name = "developments"
 tag = "developments"
 icon = "wrench"
 
