@@ -35,6 +35,6 @@ task_publish() {
         echo "publish compose image '${publish_destination}' ..."
         task_build
         curl -sSL https://raw.githubusercontent.com/nunun/swarm-builder/master/push.sh \
-                | sh -s . "${publish_destination}"
+                | sh -s docker-compose.* ${publish_destination}
 }
 task_${TASK}
