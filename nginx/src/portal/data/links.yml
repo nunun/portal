@@ -43,6 +43,20 @@ tiles:
   bg_color: '#2a3c46'
   tags: ['activities', 'developments', 'powered_by']
 -
+  name: 'swarm-certbot'
+  url: 'https://github.com/nunun/swarm-certbot'
+  img: 'logos/GitHub-Mark-Light-120px-plus.png'
+  txt_color: '#ffffff'
+  bg_color: '#2a3c46'
+  tags: ['activities', 'developments']
+-
+  name: 'swarm-private-registry'
+  url: 'https://github.com/nunun/swarm-private-registry'
+  img: 'logos/GitHub-Mark-Light-120px-plus.png'
+  txt_color: '#ffffff'
+  bg_color: '#2a3c46'
+  tags: ['activities', 'developments']
+-
   name: 'portal'
   url: 'https://github.com/nunun/portal'
   img: 'logos/GitHub-Mark-Light-120px-plus.png'
