@@ -57,6 +57,13 @@ tiles:
   bg_color: 'rgb(18, 82, 186)'
   tags: ['activities', 'productions']
 -
+  name: 'portainer @fu-n.net'
+  url: 'http://fu-n.net:59000/'
+  img: 'logos/portainer.png'
+  txt_color: '#000000'
+  bg_color: '#ffffff'
+  tags: ['managements']
+-
   name: 'Twitch @nunun_jp'
   url: 'https://www.twitch.tv/nunun_jp/videos/all'
   img: 'logos/twitch.svg'

@@ -1,3 +1,4 @@
+.DS_Store
 nginx/src/portal/config.toml
 nginx/html/*
 !nginx/html/.gitkeep
