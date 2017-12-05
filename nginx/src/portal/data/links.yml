@@ -43,15 +43,22 @@ tiles:
   bg_color: '#2a3c46'
   tags: ['activities', 'developments', 'powered_by']
 -
-  name: 'certbot-plugin'
+  name: 'swarm-certbot-plugin'
   url: 'https://github.com/nunun/swarm-certbot-plugin'
   img: 'logos/GitHub-Mark-Light-120px-plus.png'
   txt_color: '#ffffff'
   bg_color: '#2a3c46'
   tags: ['activities', 'developments']
 -
-  name: 'private-registry'
-  url: 'https://github.com/nunun/swarm-private-registry'
+  name: 'swarm-registry'
+  url: 'https://github.com/nunun/swarm-registry'
+  img: 'logos/GitHub-Mark-Light-120px-plus.png'
+  txt_color: '#ffffff'
+  bg_color: '#2a3c46'
+  tags: ['activities', 'developments']
+-
+  name: 'swarm-portainer'
+  url: 'https://github.com/nunun/swarm-portainer'
   img: 'logos/GitHub-Mark-Light-120px-plus.png'
   txt_color: '#ffffff'
   bg_color: '#2a3c46'
