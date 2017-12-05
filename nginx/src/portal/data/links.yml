@@ -44,7 +44,7 @@ tiles:
   tags: ['activities', 'developments', 'powered_by']
 -
   name: 'certbot-plugin'
-  url: 'https://github.com/nunun/swarm-certbot'
+  url: 'https://github.com/nunun/swarm-certbot-plugin'
   img: 'logos/GitHub-Mark-Light-120px-plus.png'
   txt_color: '#ffffff'
   bg_color: '#2a3c46'
